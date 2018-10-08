@@ -5,10 +5,8 @@ import java.util.Stack;
 public class ReverseStack {
 
 	public static Stack<Integer> reverseStack(Stack<Integer> first){
-//		Integer var= null;
 		Stack<Integer> second = new Stack<>();
 		while(!first.isEmpty()) {
-//			var = first.pop();
 			second.add(first.pop());
 		}
 				
@@ -28,7 +26,6 @@ public class ReverseStack {
 		second.add(1);
 		System.out.println(second.toString());
 		
-//		 reverseStack(second);
 		System.out.println(reverseStack(second).toString());
 		
 	}

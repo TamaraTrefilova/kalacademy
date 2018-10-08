@@ -11,11 +11,10 @@ public class MissingParenthesis {
 		char [] arr = expression.toCharArray();
 		for(int i = 0; i<arr.length; i++) {
 			if(checkIfOpen(arr[i])) {
-				stack.add(arr[i]);
+				stack.push(arr[i]);
 			} else if(checkIfClosed(arr[i])) {
 				stack.pop();
 			}
-			
 		}
 		while(!stack.isEmpty())	{
 			if(stack.pop()=='(') {
